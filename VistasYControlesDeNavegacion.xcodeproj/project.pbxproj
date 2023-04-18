@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD7A744729EE74D900B22A81 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A744629EE74D900B22A81 /* PageViewController.swift */; };
 		DDA9910829ED2E29009CA910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9910729ED2E29009CA910 /* AppDelegate.swift */; };
 		DDA9910A29ED2E29009CA910 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9910929ED2E29009CA910 /* SceneDelegate.swift */; };
 		DDA9910C29ED2E29009CA910 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9910B29ED2E29009CA910 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD7A744629EE74D900B22A81 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		DDA9910429ED2E29009CA910 /* VistasYControlesDeNavegacion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VistasYControlesDeNavegacion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA9910729ED2E29009CA910 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDA9910929ED2E29009CA910 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				DDA9911029ED2E2A009CA910 /* Assets.xcassets */,
 				DDA9911229ED2E2A009CA910 /* LaunchScreen.storyboard */,
 				DDA9911529ED2E2A009CA910 /* Info.plist */,
+				DD7A744629EE74D900B22A81 /* PageViewController.swift */,
 			);
 			path = VistasYControlesDeNavegacion;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				DDA9910C29ED2E29009CA910 /* ViewController.swift in Sources */,
 				DDA9910829ED2E29009CA910 /* AppDelegate.swift in Sources */,
 				DDA9910A29ED2E29009CA910 /* SceneDelegate.swift in Sources */,
+				DD7A744729EE74D900B22A81 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
