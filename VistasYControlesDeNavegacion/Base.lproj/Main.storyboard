@@ -42,7 +42,7 @@
                                                     </mapView>
                                                     <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UL8-np-ake">
                                                         <rect key="frame" x="0.0" y="300" width="414" height="400"/>
-                                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="400" id="Afp-B3-Nf9"/>
                                                         </constraints>
@@ -143,18 +143,45 @@
         <!--Item 2-->
         <scene sceneID="qrB-vi-qzr">
             <objects>
-                <viewController storyboardIdentifier="vcPurple" id="wiE-o3-vps" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vcPurple" id="wiE-o3-vps" customClass="YellowViewController" customModule="VistasYControlesDeNavegacion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="evY-WZ-n8k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="VnL-Us-JJ9">
+                                <rect key="frame" x="0.0" y="48" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="wiE-o3-vps" id="DGT-b6-bLb"/>
+                                </connections>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxe-7e-d62">
+                                <rect key="frame" x="20" y="304" width="374" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="kLk-6m-uWU"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="rxe-7e-d62" firstAttribute="top" secondItem="VnL-Us-JJ9" secondAttribute="bottom" constant="200" id="5q5-yZ-PLt"/>
+                            <constraint firstItem="VnL-Us-JJ9" firstAttribute="top" secondItem="kLk-6m-uWU" secondAttribute="top" id="axJ-i7-PdO"/>
+                            <constraint firstItem="VnL-Us-JJ9" firstAttribute="leading" secondItem="kLk-6m-uWU" secondAttribute="leading" id="j4L-Mk-6AL"/>
+                            <constraint firstItem="VnL-Us-JJ9" firstAttribute="trailing" secondItem="kLk-6m-uWU" secondAttribute="trailing" id="m3z-Zo-TFl"/>
+                            <constraint firstItem="rxe-7e-d62" firstAttribute="leading" secondItem="kLk-6m-uWU" secondAttribute="leading" constant="20" id="vro-lW-0g6"/>
+                            <constraint firstItem="kLk-6m-uWU" firstAttribute="trailing" secondItem="rxe-7e-d62" secondAttribute="trailing" constant="20" id="x2e-Bu-QOs"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="bl1-ky-8c7"/>
+                    <connections>
+                        <outlet property="myLabel" destination="rxe-7e-d62" id="FPA-97-O8J"/>
+                        <outlet property="mySearchBar" destination="VnL-Us-JJ9" id="zun-KC-xxe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nCn-MA-22f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="983" y="1360"/>
+            <point key="canvasLocation" x="982.60869565217399" y="1359.375"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="UAB-eW-vCn">

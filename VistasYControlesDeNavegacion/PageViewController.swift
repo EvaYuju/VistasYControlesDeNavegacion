@@ -28,20 +28,20 @@ class PageViewController: UIPageViewController {
         setViewControllers([myYellowVC], direction: .forward, animated: true, completion: nil)
         //setViewControllers([myPurpleVC], direction: .forward, animated: true, completion: nil)
         
-        // Porque queremos que se ejecuten las siguientes op. delegadas con el protocolo en nuestra misma clase.
+        // Porque queremos que se ejecuten las siguientes op. delegadas con el protocolo en nuestra MISMA clase.
         dataSource = self
     }
 }
 
 
-// extender de :UIPageViewControllerDataSource = Protocolo que vamos a utilizar para implementar diferentes op. asociadas al PageViewC.
+// extender de :UIPageViewControllerDataSource => Protocolo que vamos a utilizar para implementar diferentes op. asociadas al PageViewC.
 extension PageViewController: UIPageViewControllerDataSource {
     // Para mostrar las páginas según en la dirección que nos desplacemos
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         // Primero recuperar el índice
-        // Constante index para el indice donde nos encontramos
+        // Constante index para el índice donde nos encontramos
         let index = myControllers.firstIndex(of: viewController)
-        // Comprobaremos si el indice = 0 pasaremos al otro y viceversa
+        // Comprobaremos si el índice = 0 pasaremos al otro y viceversa
         if index == 0 {
             return myControllers.last
         }
@@ -49,7 +49,7 @@ extension PageViewController: UIPageViewControllerDataSource {
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        // Igual para cada indice que tengamos
+        // Igual para cada índice que tengamos
         let index = myControllers.firstIndex(of: viewController)
         if index == 0 {
             return myControllers.last

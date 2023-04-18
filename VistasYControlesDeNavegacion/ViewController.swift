@@ -20,11 +20,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         // Titular pantalla navigation
         title = "My View controller"
         
+        // Desempaquetar
+        if let url = URL(string: "https://google.com") {
+            WKWebView.load(URLRequest(url: url))
+        }
+        
         // Accedemos al webView y le asignamos url
-        WKWebView.load(URLRequest(url: URL(string: "https://github.com/EvaYuju")!))
+        //WKWebView.load(URLRequest(url: url))
         // MapView con un a URL por defecto 
         myMap.centerCoordinate = CLLocationCoordinate2D(latitude: 37.407403770, longitude: -5.975600580)
     }
