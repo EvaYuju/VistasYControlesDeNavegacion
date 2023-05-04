@@ -13,14 +13,14 @@ class YellowViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Primero ocultamos la label
         myLabel.isHidden = true
         
         // Llamamos a su delegado
         mySearchBar.delegate = self
     }
-
+    
 }
 
 extension YellowViewController: UISearchBarDelegate {

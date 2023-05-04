@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD4606A22A028C4C00A0F203 /* CalculadoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4606A12A028C4C00A0F203 /* CalculadoraViewController.swift */; };
+		DD4606A52A02AA8800A0F203 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4606A42A02AA8800A0F203 /* UIButtonExtension.swift */; };
 		DD7A744729EE74D900B22A81 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A744629EE74D900B22A81 /* PageViewController.swift */; };
 		DDA20A1C29EEC9420044DFAC /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA20A1B29EEC9420044DFAC /* YellowViewController.swift */; };
 		DDA9910829ED2E29009CA910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA9910729ED2E29009CA910 /* AppDelegate.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD4606A12A028C4C00A0F203 /* CalculadoraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraViewController.swift; sourceTree = "<group>"; };
+		DD4606A42A02AA8800A0F203 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		DD7A744629EE74D900B22A81 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		DDA20A1B29EEC9420044DFAC /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 		DDA9910429ED2E29009CA910 /* VistasYControlesDeNavegacion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VistasYControlesDeNavegacion.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD4606A32A02AA4800A0F203 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DD4606A42A02AA8800A0F203 /* UIButtonExtension.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		DDA990FB29ED2E29009CA910 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +72,7 @@
 		DDA9910629ED2E29009CA910 /* VistasYControlesDeNavegacion */ = {
 			isa = PBXGroup;
 			children = (
+				DD4606A32A02AA4800A0F203 /* Util */,
 				DDA9910729ED2E29009CA910 /* AppDelegate.swift */,
 				DDA9910929ED2E29009CA910 /* SceneDelegate.swift */,
 				DDA9910B29ED2E29009CA910 /* ViewController.swift */,
@@ -69,6 +82,7 @@
 				DDA9911529ED2E2A009CA910 /* Info.plist */,
 				DD7A744629EE74D900B22A81 /* PageViewController.swift */,
 				DDA20A1B29EEC9420044DFAC /* YellowViewController.swift */,
+				DD4606A12A028C4C00A0F203 /* CalculadoraViewController.swift */,
 			);
 			path = VistasYControlesDeNavegacion;
 			sourceTree = "<group>";
@@ -145,8 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDA9910C29ED2E29009CA910 /* ViewController.swift in Sources */,
+				DD4606A22A028C4C00A0F203 /* CalculadoraViewController.swift in Sources */,
 				DDA9910829ED2E29009CA910 /* AppDelegate.swift in Sources */,
 				DDA9910A29ED2E29009CA910 /* SceneDelegate.swift in Sources */,
+				DD4606A52A02AA8800A0F203 /* UIButtonExtension.swift in Sources */,
 				DD7A744729EE74D900B22A81 /* PageViewController.swift in Sources */,
 				DDA20A1C29EEC9420044DFAC /* YellowViewController.swift in Sources */,
 			);

@@ -11,10 +11,10 @@ class PageViewController: UIPageViewController {
     
     // vble privada de tipo array y contiene controladores, inicializada vacia
     private var myControllers: [UIViewController] = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         let myYellowVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "vcYellow")
         let myPurpleVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "vcPurple")

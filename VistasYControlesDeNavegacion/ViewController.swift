@@ -10,7 +10,7 @@ import WebKit
 import MapKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var myView: UIView!
     @IBOutlet weak var myImageview: UIImageView!
     @IBOutlet weak var myFakeView: UIView!
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         // MapView con un a URL por defecto 
         myMap.centerCoordinate = CLLocationCoordinate2D(latitude: 37.407403770, longitude: -5.975600580)
     }
-
+    
     @IBAction func myButton(_ sender: Any) {
         myFakeView.isHidden = true // Mejora a ocultar myView
     }
